@@ -1,3 +1,2 @@
-Hormonal regulation of salt and water excretion: 
-a mathematical model of whole-kidney function 
-and pressure-natriuresis.
+This is the Chaste development environment
+created by the Systems Biology Laboratory
