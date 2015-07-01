@@ -1,4 +1,4 @@
-log=/vagrant/temp/install_rgm_kidney.log
+log=/vagrant/temp/install_chaste.log
 
 echo Getting code from the darcs repository and building it | tee -a $log
 cd ~/

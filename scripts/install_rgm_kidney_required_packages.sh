@@ -1,6 +1,6 @@
-log=/vagrant/temp/install_rgm_kidney.log
+log=/vagrant/temp/install_chaste_kidney.log
 
-echo Installing packages required for rgm_kidney | tee -a $log
+echo Installing packages required for chaste | tee -a $log
 
 #wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 #sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu precise-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'

@@ -49,7 +49,7 @@ end
 	config.vm.provision "shell", inline: "sudo mkdir /vagrant/temp -p;chmod 777 /vagrant/temp"
 	config.vm.provision "file", source: "data", destination: "/vagrant/temp"
 
-	config.vm.provision "shell", path: "scripts/install_rgm_kidney_required_packages.sh", privileged: false
+	config.vm.provision "shell", path: "scripts/install_chaste_required_packages.sh", privileged: false
 	
 	config.vm.provision "shell", path: "scripts/build_nodesktop.sh", privileged: false	
 	if !(is_docker)
