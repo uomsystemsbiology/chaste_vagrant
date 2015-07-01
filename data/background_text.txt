@@ -1,2 +1,4 @@
 The default user is 'sbl' password 'sbl'
 
+This is the Chaste development environment created by the Systems Biology Laboratory
+
