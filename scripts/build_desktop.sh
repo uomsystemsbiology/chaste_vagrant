@@ -22,8 +22,12 @@ WALLPAPERPATH=/usr/share/lubuntu/wallpapers/sbl_reference_environment_chaste_wal
 sudo sed -i "s#\(wallpaper *= *\).*#\1$WALLPAPERPATH#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 sudo sed -i "s#\(wallpaper_mode *= *\).*#\1center#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 
-echo Setting the position of the run folder on the desktop | tee -a $log
-printf "[run]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+echo Creating link to scripts on desktop| tee -a $log
+ln -sv /home/sbl/compile_cell_based_demo.sh /home/sbl/Desktop/compile_cell_based_demo.sh
+printf "[compile_cell_based_demo.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+
+ln -sv /home/sbl/run_cell_based_demo.sh /home/sbl/Desktop/run_cell_based_demo.sh
+printf "[run_cell_based_demo.sh]\nx=160\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 
 echo Removing Trash icon from the desktop
 sudo sed -i "s#\(show_trash *= *\).*#\10#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf

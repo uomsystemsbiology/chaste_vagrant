@@ -12,5 +12,6 @@ scons core
 printf '\nEnvironment built at ' >> /vagrant/temp/build_info.txt
 date >> /vagrant/temp/build_info.txt
 
-# Copy some scripts to a folder on the Desktop
-# We aren't doing this either
+echo Copying shell scripts to home directory | tee -a $log
+sudo cp /vagrant/temp/data/*.sh /home/sbl/.
+sudo chmod 777 /home/sbl/*.sh

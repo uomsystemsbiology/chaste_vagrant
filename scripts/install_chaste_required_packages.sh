@@ -12,6 +12,9 @@ sudo apt-get -y update
 echo Installing Chaste packages
 sudo apt-get install -y chaste-source
 
+echo Installing other packages
+sudo apt-get install -y default-jre default-jdk
+
 echo Tidying up by running autoremove | tee -a $log
 sudo apt-get -y autoremove
 
