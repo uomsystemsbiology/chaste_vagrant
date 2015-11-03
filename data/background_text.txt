@@ -1,4 +1,6 @@
 The default user is 'sbl' password 'sbl'
+The Chaste code is in /home/sbl/chaste-source 
 
-The Chaste code is in /home/sbl/chaste-source
-
+For a demonstration of Chaste, double-click the 'compile_cell_based_demo.sh' 
+script below and select 'Execute in Terminal', then double-click the
+'run_cell_based_demo.sh' script, and select 'Execute in Terminal'
